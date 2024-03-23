@@ -25,6 +25,10 @@
     Price: <input type="number" name="price"><br><br>
     City: <input type="text" name="city"><br><br>
     Name: <input type="text" name="author"><br><br>
+    First image: <input type="file" name="file1"><br><br>
+    Second image: <input type="file" name="file2"><br><br>
+    Third image: <input type="file" name="file3"><br><br>
+
     <input type="submit" value="Add a product">
 </form>
 </body>
