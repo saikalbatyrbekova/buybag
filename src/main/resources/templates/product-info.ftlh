@@ -6,6 +6,9 @@
 <body>
 <h1>Bags US/EU - Michael Kors</h1><hr>
 <h4>Detailed information about product</h4>
+<#list images as img>
+    <img src="/images/${img.id}" height="60px"/><br><br>
+</#list>
 <b>Name of a product: </b>${product.title}<br>
 <b>Description of a product: </b>${product.description}<br>
 <b>Price: </b>${product.price}<br>

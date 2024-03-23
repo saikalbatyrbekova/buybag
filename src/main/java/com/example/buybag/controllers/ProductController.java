@@ -26,7 +26,9 @@
 
         @GetMapping("/product/{id}")
         public String productInfo(@PathVariable long id, Model model) {
-            model.addAttribute("product", productService.getProductById(id));
+            Product product = productService.getProductById(id);
+            model.addAttribute("product", product);
+            model.addAttribute("images", product.getImages());
             return "product-info";
         }
 
